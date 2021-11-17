@@ -1,0 +1,59 @@
+
+
+    <form #loginForm="ngForm" (ngSubmit)="search()">
+      <!-- <small class="text-danger">{{msg}}</small> -->
+      
+      <div class="form-group mt-5 pt-5">
+
+        <label for="departureSpaceport" class="form-label">Departure Spaceport:</label>
+          <input type="text" class="form-control form-location" id="departureSpaceport" [(ngModel)]="findFlights.departureSpaceport" name="departureSpaceport" required #departureSpaceport="ngModel">
+  
+        <label for="arrivalSpaceport" class="form-label">Arrival Spaceport:</label>
+        <input type="text" class="form-control form-location" id="arrivalSpaceport" [(ngModel)]="findFlights.arrivalSpaceport" name="arrivalSpaceport" required #arrivalSpaceport="ngModel"> 
+          
+      </div>
+
+      <div class="form-group form-row-right">
+
+         <label for="departureDate" class="form-label">Departure Date:</label>
+          <input type="number" class="form-control form-location" id="departureDate" [(ngModel)]="findFlights.departureDate" name="departureDate" required #departureDate="ngModel">
+     
+          <label for="arrivalDate" class="form-label form-right-label">Return Date:</label>
+          <input type="number" class="form-control form-location form-right" id="arrivalDate" [(ngModel)]="findFlights.arrivalDate" name="arrivalDate" required #arrivalDate="ngModel">
+          
+        </div>
+        <div class="form-group"><button type="submit" name="search" id="search" class="btn btn-color active">Search</button></div>
+      
+  </form> 
+
+  <div *ngIf="isShowAll">
+  <p></p>
+  <h3>Choose Your Departure Spaceship</h3>
+      <hr>
+
+  <div class="d-grid gap-2 col-6 mx-auto container jumbotron container-color table-position">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-color">
+            <tr>
+                <th *ngFor="let i of headers">{{i}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let all of allFlights">  
+                <td>{{all.id}}</td>
+                <td>{{all.departureDateTime | date: 'MMMM d, y, h:mm a'}}</td>
+                <td>{{all.arrivalDateTime | date: 'MMMM d, y, h:mm a'}}</td>
+                <td>{{all.departureSpaceport.spName}}</td>
+                <td>{{all.arrivalSpaceport.spName}}</td>
+                <td>{{all.vendor.companyName}}</td>
+                <td>{{all.ticketsAvailable}}</td>  
+                <td>{{all.pricePerTicket}}</td>   
+                <td><button name="book" class="btn btn-color2" (click)="goToTicket(all.id)">Book</button></td> 
+                </tr>   
+        </tbody>
+    </table>
+  </div>
+</div>
+  <app-child-find-flights [childData]="parentData" [isShow]="isShow"></app-child-find-flights>
+
+

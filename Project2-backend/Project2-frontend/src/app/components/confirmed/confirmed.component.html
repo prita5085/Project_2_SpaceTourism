@@ -1,0 +1,90 @@
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"> 
+
+
+<div class="container">
+    <div class="innerContainer">
+        <img src="assets/email.png" alt="email">
+        <!-- Email Image Can Be Placed Here -->
+
+    <h1>Thank You!</h1>
+    <p>We appreciate you booking your flight with us! <br>
+    Your submission has been received. <br>
+    Your booking will be confirmed soon.</p>
+    </div>
+
+
+    
+    <div>
+        <h1>Flight Itinerary</h1>
+        <table width="80%">
+            <!--From Spaceport, Planet-->   <!--To Spaceport, Planet-->
+            <tr>
+                <td class="td-size"><i class="fas fa-plane-departure"></i> {{flight.departureSpaceport.spName}}, {{flight.departureSpaceport.planet}}</td>
+                <td class="td-size"><i class="fas fa-plane-arrival"></i> {{flight.arrivalSpaceport.spName}}, {{flight.arrivalSpaceport.planet}}</td>
+            </tr>
+        </table>
+        <hr id="divider" class="divider-color">
+
+             <!--Passenger Info-->
+        <table width="80%">
+            <h5>PASSENGER INFORMATION</h5>
+            <tr>
+                <td class="td-size-label"><strong>Name of Traveller</strong></td>
+                <td class="td-size-label"><strong>Email</strong></td>
+            </tr>
+            <tr>
+                <td class="td-size-value">{{customer.firstName}} {{customer.lastName}}</td>
+                <td class="td-size-value">{{customer.email}}</td>
+            </tr>
+            <tr>
+                <td class="td-size-label"><strong>Reservation ID</strong></td>
+                <td class="td-size-label"><strong>Address</strong></td>
+
+            </tr>
+            <tr>
+                <td class="td-size-value">ZXMAR1101</td>
+                <td class="td-size-value">{{customer.addressLine1}},<br>
+                    {{customer.city}},
+                        {{customer.state}},
+                        {{customer.zipcode}}
+                </td>
+            </tr>
+        </table>
+        <hr id="divider">
+
+
+        <!--Departure Info-->
+        <table width="80%">
+            <h5>DEPARTURE INFORMATION</h5>
+            <tr>
+                <td rowspan="4">
+                    <p><strong>Flight No.</strong></p>
+                    <p class="td-size-value2">PR 3301</p>
+                    <p><strong>Class</strong></p>
+                    <p>{{ticket.cabinClass}}</p>
+
+                    <p><strong>Status</strong></p>
+                    <p>CONFIRMED</p>
+                    
+                </td>
+                <td class="td-size-label"><strong>Departure</strong></td>
+                <td class="td-size-label"><strong>Departure Date</strong></td>
+            </tr>
+            <tr>
+                <td class="td-size-value">{{flight.departureSpaceport.spName}}, {{flight.departureSpaceport.planet}}</td>
+                <td class="td-size-value">{{flight.departureDateTime}}</td>
+            </tr>
+            <tr>
+                <td class="td-size-label"><strong>Arrival</strong></td>
+                <td class="td-size-label"><strong>Arrival Date</strong></td>
+            </tr>
+            <tr>
+                <td class="td-size-value">{{flight.arrivalSpaceport.spName}}, {{flight.arrivalSpaceport.planet}}</td>
+                <td class="td-size-value">{{flight.arrivalDateTime}}</td>
+            </tr>
+        </table>
+        <hr id="divider">
+
+    </div>
+    
+    </div>

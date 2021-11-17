@@ -1,0 +1,141 @@
+<div class="container">
+        <p style="color: #bccfe7; text-align: left; font-size: 150%; padding-top: 35px;">Hi, Guest</p>
+        <h3 style="color: #bccfe7; text-align: right; margin-left: 35px"><b>Your Number #1 site to travel the galaxy</b></h3>
+        <hr>
+
+    <br>
+  
+
+
+
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" data-bs-interval="10000">
+                  <div class="carousel-item active">
+                    <img src="assets/family.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>Explore</h4>
+                      <p>Let you and your family enjoy time out on a planet</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <img src="assets/galaxy.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>Adventure</h4>
+                      <p>See the sites and explore the galaxy</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <img src="assets/events.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Experience</h5>
+                      <p>Experience the phenomenons of space.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <div class="card">
+                <div class="card-header">
+                  <p>Quote</p>
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-3">
+                    <p>I'll never use NASA booking again! I will only use <i>Spaceship Enterprises.</i> </p>
+                    <footer class="blockquote-footer">Neil Armstrong <cite title="Source Title">Former NASA Astronaut</cite></footer>
+                    </blockquote>
+                </div>
+        </div>
+
+        <hr>
+        <br>
+
+        <div class="card" id="message">
+                <div class="card-body" id="messagetext">
+                  <h5 style="font-size: 2em"><b>Exciting trips coming to the Enterprises</b></h5>
+                  <p style="font-size: 1.5em">We have a new spaceport on Venus!</p>
+                </div>
+        </div>
+
+        <br>
+
+
+        
+        <div class="row card-group"> 
+                <div class="col-4" *ngFor="let flight of flightList" >
+                   <div class="card" style="width: 18rem;">
+                       <img src="assets/enterprise.jpeg" class="card-img-top" style="position: relative; left: 105px;" alt="...">
+                       <div class="card-body" style="position: relative; left: 105px;">
+                           <h4 class="card-title" style="font-size: 3em; color: #bccfe7;">{{flight.arrivalSpaceport.planet}}</h4>
+                           <h5 class="card-title" style="font-size: 1.5em; color: #bccfe7;">Spaceport: {{flight.arrivalSpaceport.spName}}</h5>
+
+                           <p class="card-text" style="color: #7f8b9b;; font-size: 1.25em">Price: {{flight.pricePerTicket | currency: 'USD'}}</p>
+                           <button href="#" class="btn btn-color2" (click)="book()">Book</button>
+                        </div>
+                    </div>
+                </div>
+        <div>
+
+    <br>
+
+
+    <hr>
+
+    <div class="card">
+            <div class="card-header">
+                Quote
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-3">
+                <p>Thanks to <i>Spaceship Enterprises</i> it's allowed me to retire the Millennium Falcon</p>
+                <footer class="blockquote-footer">Han Solo<cite title="Source Title"> Smuggler/Captain of the Millennium Falcon</cite></footer>
+                </blockquote>
+            </div>
+    </div>
+    <hr>
+    <br>
+
+    <div class="card" id="adContainer">
+            <div class="card-header" id="ad">
+              Ad
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><b>Pizza Planet</b></h5>
+              <p class="card-text" style="color: #bccfe7;">Hungry??? Serving your local star cluster.</p>
+                <p style="color: #bccfe7;">Call mission control now for a delivery shuttle!</p>
+              <button class="btn btn-danger">Order Now</button>
+            </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <div class="card" id="message">
+            <div class="card-body" id="messagetext">
+              <h5><b>Travel Smarter</b></h5>
+              <p>Save instantly on trips with Enterprises points!</p>
+            </div>
+    </div>
+
+    <br>
+
+
+
+</div>
+

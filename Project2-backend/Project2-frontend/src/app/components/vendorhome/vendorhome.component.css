@@ -1,0 +1,41 @@
+h2 {
+    
+    font-size: 2em;
+    color: black}
+th {
+    border: solid;
+}
+
+h1 {
+    color:#bccfe7
+}
+
+.thead-color {
+    background-color: #abbbcf;
+}
+
+.btn-color {
+    margin: auto auto;
+    font-size: 1.5em;
+    color: black;
+    background-color: #d1c156;
+    height: 2.5em;
+    width: 12.75em;
+}
+
+.btn-color:hover {
+    background-color: #86c7ba;
+    border: none;
+}
+
+.btn-color2 {
+   
+    color: black;
+    background-color: #d1c156;
+    
+}
+
+.btn-color2:hover {
+    background-color: #86c7ba;
+    border: #86c7ba;
+}

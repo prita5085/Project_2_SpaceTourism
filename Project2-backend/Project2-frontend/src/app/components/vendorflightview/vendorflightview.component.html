@@ -1,0 +1,154 @@
+<br>
+<h1>{{currentFlight.vendor.companyName}}</h1>
+<h1>Flight Number: {{currentFlight.id}}</h1>
+<h2 style="color: #bccfe7;" *ngIf="flightDeleted">Flight Number {{currentFlight.id}} Successfully Cancelled </h2>
+<!-- Departure Date field -->
+<div class="form-group row">
+    <label for="departureDateTimeInput" class="col-sm-3 col-form-label">Departure Date:</label>
+    <div class="col-sm-6">
+
+        <input *ngIf="!editActive; else editDeparture" type="number" class="form-control" id='departureDateTimeInput'
+            placeholder="ddmmyyyy" value="{{currentFlight.departureDateTime}}" readonly>
+
+        <ng-template #editDeparture>
+            <input type="number" class="form-control no-edit-color" id='departureDateTimeInput' placeholder="ddmmyyyy"
+                value="{{currentFlight.departureDateTime}}" [(ngModel)] = "currentFlight.departureDateTime">
+        </ng-template>
+
+    </div>
+</div>
+
+<!-- Arrival date field -->
+<div class="form-group row">
+    <label for="arrivalDateTimeInput" class="col-sm-3 col-form-label">Arrival Date:</label>
+    <div class="col-sm-6">
+
+        <input *ngIf="!editActive; else editArrival" type="number" class="form-control" id='arrivalDateTimeInput'
+            placeholder="ddmmyyyy" value="{{currentFlight.arrivalDateTime}}" readonly>
+
+        <ng-template #editArrival>
+            <input type="number" class="form-control no-edit-color" id='arrivalDateTimeInput' placeholder="ddmmyyyy"
+                value="{{currentFlight.arrivalDateTime | date: 'MMMM d, y, h:mm a'}}" [(ngModel)]="currentFlight.arrivalDateTime">
+        </ng-template>
+    </div>
+</div>
+
+<!-- Price per ticket field -->
+<div class="form-group row">
+    <label for="priceInput" class="col-sm-3 col-form-label">Price Per Ticket:</label>
+    <div class="col-sm-6">
+
+        <input *ngIf="!editActive; else editPrice" type="number" class="form-control" id='priceInput'
+            placeholder="00.00" value="{{currentFlight.pricePerTicket}}" readonly>
+
+        <ng-template #editPrice>
+            <input type="number" class="form-control" id='priceInput' placeholder="00.00"
+                value="{{currentFlight.pricePerTicket}}" [(ngModel)]="currentFlight.pricePerTicket">
+        </ng-template>
+    </div>
+</div>
+
+<!-- Flight cost field -->
+<div class="form-group row">
+    <label for="costInput" class="col-sm-3 col-form-label">Flight Cost:</label>
+    <div class="col-sm-6">
+
+        <input *ngIf="!editActive; else editCost" type="number" class="form-control" id='costInput' placeholder="00.00"
+            value="{{currentFlight.vendorCost}}" readonly>
+
+        <ng-template #editCost>
+            <input type="number" class="form-control" id='costInput' placeholder="00.00"
+                value="{{currentFlight.vendorCost}}" [(ngModel)]="currentFlight.vendorCost">
+        </ng-template>
+    </div>
+</div>
+
+
+<!-- Available tickets field -->
+<div class="form-group row">
+    <label for="costInput" class="col-sm-3 col-form-label">Available Tickets Remaining:</label>
+    <div class="col-sm-6">
+
+        <input *ngIf="!editActive; else editAvailable" type="number" class="form-control" id='costInput'
+            placeholder="00.00" value="{{currentFlight.ticketsAvailable}}" readonly>
+
+        <ng-template #editAvailable>
+            <input type="number" class="form-control" id='costInput' placeholder="00.00"
+                value="{{currentFlight.ticketsAvailable}}" [(ngModel)]="currentFlight.ticketsAvailable">
+        </ng-template>
+    </div>
+</div>
+
+<!-- Current Flight status field -->
+<div class="form-group row">
+    <label for="costInput" class="col-sm-3 col-form-label">Current Flight Status:</label>
+    <div class="col-sm-6">
+
+        <input *ngIf="!editActive; else editStatus" type="text" class="form-control" id='costInput' placeholder="00.00"
+            value="{{currentFlight.status}}" readonly>
+        <ng-template #editStatus>
+            <input type="text" class="form-control" id='costInput' placeholder="00.00"
+                value="{{currentFlight.status}}" [(ngModel)]="currentFlight.status">
+        </ng-template>
+
+    </div>
+</div>
+
+<!-- Departure spaceport field -->
+<div class="form-group row">
+    <label  for="departureSpace" class="col-sm-3 col-form-label">Departure SpacePort:</label>
+
+    <input *ngIf="!editActive; else editDSpaceport" class="col-sm-4 form-control input-form" name="departureSpace" type="text"
+        value="{{currentFlight.departureSpaceport.spName}}" readonly>
+
+    <ng-template #editDSpaceport>
+            <!-- <label for="departureSpace" class="col-sm-3 col-form-label">Departure SpacePort:</label> -->
+            <select class = "col-sm-4 form-control input-form" [(ngModel)] = 'departureSpaceportIndex'>
+                <option *ngFor = 'let port of spaceportList' value= {{spaceportList.indexOf(port)}}>{{port.spName}}</option>
+            </select>
+    </ng-template>
+</div>
+
+<!-- Arrival spaceport field -->
+<div class="form-group row">
+    <label for="arrivalSpace" class="col-sm-3 col-form-label">ArrivalSpacePort:</label>
+    <input *ngIf="!editActive; else editASpaceport" class="col-sm-4 form-control input-form" name="arrivalSpace" type="text" value="{{currentFlight.arrivalSpaceport.spName}}" readonly>
+
+    <ng-template #editASpaceport>
+        <!-- <label for="arrivalSpace" class="col-sm-3 col-form-label">Arrival SpacePort:</label> -->
+        <select class = "col-sm-4 form-control input-form" [(ngModel)] = 'arrivalSpaceportIndex'>
+            <option *ngFor = 'let port1 of spaceportList' value= {{spaceportList.indexOf(port1)}}>{{port1.spName}}</option>
+        </select>
+    </ng-template>
+</div>
+
+<!-- Spaceship field -->
+<div class="form-group row">
+    <label  for="spaceshipInput" class="col-sm-3 col-form-label">Spaceship:</label>
+    <input *ngIf="!editActive; else editSpaceship" class="col-sm-4 form-control input-form" name="spaceshipInput" type="text" value="{{currentFlight.spaceship.ssName}}" readonly>
+
+    <ng-template #editSpaceship>
+        <!-- <label for="spaceshipInput" class="col-sm-3 col-form-label">Spaceship:</label> -->
+        <select class = "col-sm-4 form-control input-form" [(ngModel)] = 'spaceshipIndex'>
+            <option *ngFor = 'let ship of spaceshipList' value= {{spaceshipList.indexOf(ship)}}>{{ship.ssName}}</option>
+        </select>
+    </ng-template>
+</div>
+
+
+<!-- Buttons -->
+<div class="d-grid gap-2 col-2 mx-auto">
+
+    <button *ngIf="!editActive; else finishEdit" id="editFlightButton" type="button" class="btn btn-color" (click)="editFlight()">Edit Flight</button>
+
+    <ng-template #finishEdit>
+        <button *ngIf="editActive" id="submitEditButton" type="button" class="btn btn-color" (click) = submitEdit()>Submit Edit</button>
+        <button id="finishEditButton" type="button" class="btn btn-color" (click)="editFlight()">Cancel Edit</button>
+    </ng-template>
+
+    <button id="deleteFlightButton" type="button" class="btn btn-color" (click)="deleteFlight()">Delete Flight</button>
+    <br>
+
+    <button id="vendorReturnButton" type="button" class="btn btn-color" (click)="returnVendorHome()">Return Home</button>
+</div>
+

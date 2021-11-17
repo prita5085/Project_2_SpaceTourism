@@ -1,0 +1,40 @@
+label{
+    text-align: right;
+    color: #bccfe7;
+}
+
+#loginButton
+{
+    margin: auto auto;
+    font-size: 1.5em;
+    color: black;
+    background-color: #d1c156;
+    height: 2.5em;
+    width: 6.75em;
+}
+/* #completeBody{
+    
+    border: 1px solid black;
+} */
+p{
+    text-align: center;
+    color: red;
+}
+
+#loginButton:hover {
+    background-color: #86c7ba;
+    border: none;
+}
+
+.greeting-header {
+    padding: 25px 25px;
+    
+    text-align: center;
+    color: #bccfe7;
+}
+
+.label-color {
+    color: black;
+}
+
+

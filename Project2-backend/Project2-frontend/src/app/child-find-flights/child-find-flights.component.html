@@ -1,0 +1,29 @@
+
+<div *ngIf="isShow">
+<p></p>
+<h3 id="filtered">Your Filtered Flights</h3>
+
+
+    <div class="d-grid gap-2 col-6 mx-auto container jumbotron container-color table-position">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-color">
+                <tr>
+                    <th *ngFor="let i of headers">{{i}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of childData[0]">  
+                    <td>{{data.id}}</td>
+                    <td>{{data.departureDateTime | date: 'MMMM d, y, h:mm a'}}</td>
+                    <td>{{data.arrivalDateTime | date: 'MMMM d, y, h:mm a'}}</td>
+                    <td>{{data.departureSpaceport.spName}}</td>
+                    <td>{{data.arrivalSpaceport.spName}}</td>
+                    <td>{{data.vendor.companyName}}</td>
+                    <td>{{data.ticketsAvailable}}</td>
+                    <td>{{data.pricePerTicket}}</td>  
+                    <td><button id="book1" class="btn btn-color2"(click)="goToTicket(data.id)">Book</button></td> 
+                    </tr>  
+            </tbody>
+        </table>
+    </div>
+</div>

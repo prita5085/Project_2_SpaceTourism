@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'AndroidAssassin-grz1';
+  src: url('AndroidAssassin-grz1.eot');
+  src: url('AndroidAssassin-grz1.eot?#iefix') format('embedded-opentype'),
+       url('AndroidAssassin-grz1.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AndroidAssassin';
+  src: url('AndroidAssassin.svg#AndroidAssassin') format('svg'),
+       url('AndroidAssassin.ttf') format('truetype'),
+       url('AndroidAssassin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,107 @@
+* {
+  
+}
+
+.container {
+
+}
+
+p {
+  color: #bccfe7;
+}
+
+.card {
+    background: transparent;
+    color: white;
+}
+
+.carousel .carousel-item {
+    height: 350px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit:contain;
+      top: 0;
+      left: 0;
+      min-height: 400px;
+  }
+
+  h3 {
+      text-align: right;
+      color: white
+  }
+  #message{
+    background-color: #abbbcf;
+  }
+  #messagetext{
+    color: black;
+  }
+
+  #ad {
+      text-align: left;
+     
+  }
+
+  #adContainer {
+    background-image: url("/assets/ad.jpeg");
+    height: 200px; /* You must set a specified height */
+    background-position: right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;
+    text-align: left;
+    color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+
+  }
+
+  hr {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  #carouselExampleCaptions {
+    /* margin-left: 60px;
+    margin-right: 60px; */
+  }
+
+  .card-body p {
+    color: black;
+  }
+
+  .card-header p {
+    font-size: 1.5em;
+  }
+
+  .blockquote p {
+    font-size: 2.5em;
+    color: #bccfe7;
+  }
+
+  .blockquote-footer {
+    font-size: 1.75em;
+  }
+
+  .btn-color2 {
+   
+    color: black;
+    background-color: #d1c156;
+    
+}
+
+.btn-color2:hover {
+    background-color: #86c7ba;
+    border: #86c7ba;
+}
+
+.card-text{
+  color: #bccfe7;
+}
+
+
+
+ 

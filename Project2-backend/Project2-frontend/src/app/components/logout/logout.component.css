@@ -1,0 +1,21 @@
+.btn-color {
+    margin: auto auto;
+    font-size: 1.5em;
+    color: black;
+    background-color: #d1c156;
+    height: 2.5em;
+    width: 7.75em;
+}
+
+.btn-color:hover {
+    background-color: #86c7ba;
+    border: none;
+}
+h3 {
+    text-align: center;
+    color: #bccfe7;
+}
+
+* {
+    padding: 10px 0px;
+}

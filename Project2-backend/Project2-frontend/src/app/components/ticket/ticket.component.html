@@ -1,0 +1,84 @@
+<!-- Ticket Form -->
+<div class="container">
+    <div class="main">
+    <p id="response"></p>
+    <h1 id="headingBook">Book Your Ticket</h1>
+    <form #loginForm="ngForm" (ngSubmit)="book()">
+        <table width="100%" border="3">
+            <!--First Name-->
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fistName" id="firstName" [(ngModel)] = "firstName"></td>
+            </tr>
+            <!--Last Name-->
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastName" id="lastName" [(ngModel)] = "lastName"></td>
+            </tr>
+
+            <!--Phone Number-->
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" id="phoneNo" name="phoneNo" [(ngModel)] = "formattedPh"></td>
+            </tr>
+            <!--Email-->
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="email" name="email" [(ngModel)] = "email"></td>
+            </tr>
+
+            <tr>
+                <td>Passport Number</td>
+                <td><input type="number" id="passportNo" name="passportNo" [(ngModel)] = "passportNo"></td>
+            </tr>
+
+            <!--Meals-->
+            <tr>
+                <td>Meals</td>
+                <td>
+                    <select id="meals" [(ngModel)]="mealSelected" name="meals">
+                        <option *ngFor="let meal of meals" [value]="meal.name">
+                            {{meal.name}}
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!--Cabin Class-->
+            <tr>
+                <td>Cabin Class</td>
+                <td><select id="cabinClass" [(ngModel)]="cabinSelected" name="cabinClass">
+                        <option *ngFor="let cabinClass of cabinClass" [value]="cabinClass.name"> 
+                            {{cabinClass.name}}
+                        </option> 
+                    </select></td>
+            </tr>
+            <!--Expiry Date-->
+            <tr>
+                <td>Expiration Date</td>
+                <td><input type="text" name="expiryDate" id="expiryDate" [(ngModel)] = "expiryDate"></td>
+            </tr>
+            <!--No. of Passengers-->
+            <tr>
+                <td>No. of Passengers</td>
+                <td><input type="number" name="noOfPassengers" id="noOfPassengers" [(ngModel)] = "noOfPassengers"></td>
+            </tr>
+           
+             <!--Checked bag-->
+             <tr>
+                <td>Checked bag</td>
+                <td><input type="number" name="checkedBag" id="checkedBag" [(ngModel)] = "checkedBag"></td>
+            </tr>
+            <!--Carry-on bag-->
+            <tr>
+                <td>Carry-on bag</td>
+                <td><input type="number" name="carryOnBag" id="carryOnBag" [(ngModel)] = "carryOnBag"></td>
+            </tr>
+            <!--Book Ticket Button-->
+            <tr>
+                <td></td>
+                <td colspan="2"><button id="bookTicket" class="btn btn-color">Book Ticket</button></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</div>

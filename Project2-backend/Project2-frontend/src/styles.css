@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(//db.onlinewebfonts.com/c/5b6a3aec6c7a8a9de2d6f02c4ac32a14?family=NasalizationW00-Galaxy);
+
+@import url(//db.onlinewebfonts.com/c/593db17fd5093330680347f1255d5353?family=Skilt+Gothic);
+
+@font-face {
+    font-family: "NasalizationW00-Galaxy"; 
+    src: url("//db.onlinewebfonts.com/t/5b6a3aec6c7a8a9de2d6f02c4ac32a14.eot"); 
+    src: url("//db.onlinewebfonts.com/t/5b6a3aec6c7a8a9de2d6f02c4ac32a14.eot?#iefix") format("embedded-opentype"), 
+         url("//db.onlinewebfonts.com/t/5b6a3aec6c7a8a9de2d6f02c4ac32a14.woff2") format("woff2"), 
+         url("//db.onlinewebfonts.com/t/5b6a3aec6c7a8a9de2d6f02c4ac32a14.woff") format("woff"), 
+         url("//db.onlinewebfonts.com/t/5b6a3aec6c7a8a9de2d6f02c4ac32a14.ttf") format("truetype"), 
+         url("//db.onlinewebfonts.com/t/5b6a3aec6c7a8a9de2d6f02c4ac32a14.svg#NasalizationW00-Galaxy") format("svg"); 
+        }
+
+
+@font-face {font-family: "Skilt Gothic"; src: url("//db.onlinewebfonts.com/t/593db17fd5093330680347f1255d5353.eot"); src: url("//db.onlinewebfonts.com/t/593db17fd5093330680347f1255d5353.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/593db17fd5093330680347f1255d5353.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/593db17fd5093330680347f1255d5353.woff") format("woff"), url("//db.onlinewebfonts.com/t/593db17fd5093330680347f1255d5353.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/593db17fd5093330680347f1255d5353.svg#Skilt Gothic") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/b357504117fd83d25e5a63601455b367?family=SF+Distant+Galaxy);
+
+@font-face {font-family: "SF Distant Galaxy"; src: url("//db.onlinewebfonts.com/t/b357504117fd83d25e5a63601455b367.eot"); src: url("//db.onlinewebfonts.com/t/b357504117fd83d25e5a63601455b367.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b357504117fd83d25e5a63601455b367.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b357504117fd83d25e5a63601455b367.woff") format("woff"), url("//db.onlinewebfonts.com/t/b357504117fd83d25e5a63601455b367.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b357504117fd83d25e5a63601455b367.svg#SF Distant Galaxy") format("svg"); }
+
+/* Current Font in use */
+@import url(//db.onlinewebfonts.com/c/1d6a45787c37bb462b3d4e33281f51df?family=Distant+Galaxy);
+
+
+@font-face {font-family: "Distant Galaxy"; src: url("//db.onlinewebfonts.com/t/1d6a45787c37bb462b3d4e33281f51df.eot"); src: url("//db.onlinewebfonts.com/t/1d6a45787c37bb462b3d4e33281f51df.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1d6a45787c37bb462b3d4e33281f51df.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1d6a45787c37bb462b3d4e33281f51df.woff") format("woff"), url("//db.onlinewebfonts.com/t/1d6a45787c37bb462b3d4e33281f51df.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1d6a45787c37bb462b3d4e33281f51df.svg#Distant Galaxy") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/36247ed358e8559ec23d501cc8965933?family=Galaxy+Force);
+
+@font-face {font-family: "Galaxy Force"; src: url("//db.onlinewebfonts.com/t/36247ed358e8559ec23d501cc8965933.eot"); src: url("//db.onlinewebfonts.com/t/36247ed358e8559ec23d501cc8965933.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/36247ed358e8559ec23d501cc8965933.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/36247ed358e8559ec23d501cc8965933.woff") format("woff"), url("//db.onlinewebfonts.com/t/36247ed358e8559ec23d501cc8965933.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/36247ed358e8559ec23d501cc8965933.svg#Galaxy Force") format("svg"); }
+
+  h1 {
+    
+    font-family: Distant Galaxy;
+    font-size: 2.5em;
+  }
+
+  button:hover {
+    background-color: black;
+  }
+
+  .container-color {
+    background-color: #bccfe7;
+  }
+

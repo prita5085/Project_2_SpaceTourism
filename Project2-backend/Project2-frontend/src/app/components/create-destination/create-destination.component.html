@@ -1,0 +1,28 @@
+<h2>Destination Creation Station</h2>
+
+<div class="form-group row">
+    <label for="spNameInput" class="col-sm-3 col-form-label">Spaceport Name:</label>
+    <div class="col-sm-6">
+
+        <input type="text" class="form-control" id='spNameInput'
+            placeholder="Titan Port-XV1994" [(ngModel)]="spName">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="planetInput" class="col-sm-3 col-form-label">Planet:</label>
+    <div class="col-sm-6">
+
+        <input type="text" class="form-control" id='planetInput'
+            placeholder="Proxima Centauri c" [(ngModel)]="planet">
+    </div>
+</div>
+
+<div class="d-grid gap-2 col-2 mx-auto">
+<button class="btn btn-color" type="button" (click)="createDestination()">Create Destination</button>
+<button id="vendorReturnButton" type="button" class="btn btn-color" (click)="returnVendorHome()">Return Home</button>
+</div>
+
+<div class="form-group-paragraph" *ngIf="message">
+    <h3>New Destination Created!</h3>
+</div>

@@ -1,0 +1,23 @@
+.btn-color2 {
+   
+    color: black;
+    background-color: #d1c156;
+    
+}
+
+.btn-color2:hover {
+    background-color: #86c7ba;
+    border: #86c7ba;
+}
+
+.table-position {
+    position: relative;
+}
+
+.thead-color {
+    background-color: #abbbcf;
+}
+
+h3 {
+    color: #bccfe7;
+}
