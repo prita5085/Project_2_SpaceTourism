@@ -38,10 +38,13 @@ As a Customer, can modify or cancel thier tickets.
 Getting Started
 (include git clone command)
 
-git clone https://github.com/prita5085/Project_1_TRMS.git
+git clone:-
+
+https://github.com/prita5085/Project_1_TRMS.git
 
 (include all environment setup steps)
--On STS IDE, create Spring Boot Project
+-On STS IDE, create Spring Boot Project, or can create project using springInitializer.io
+-Add dependencies:- Spring Web, 
 -Add models with required relationships(oneToMany, ManyToMany), map the entity clas with Database tables using annotations (JPA), create repository layer that extends Crud Repository, services, controller layers in packages.
 -For Front-end create models, services, components, add routings-module for routings and create routes/paths. Using HTTPClientModule to make HTTP request to backend APIs.
 -For testing used JUnit with Cucumber integrated with Selenium to test UI, added database credentails in application.properties file, Postman for APIs testing.
@@ -53,7 +56,7 @@ Usage
 Steps to use the project. 
 -Start the SpringBoot Application and for front-end use command ng serve from visual studio code terminal to start the project. 
 -As a Guest, search flights, view flights, register if need to book a flight
--As a Customer, searh flights, view fligths, register, login, book a ticket from all new flights or filter flights based on conditions.
+-As a Customer, search flights, view fligths, register, login, book a ticket from all new flights or filter flights based on conditions.
 -As a Vendor create new flights, register, login, modify flights, cancel flights
 -As a Vendor can register, modify or delete spaceports
 -As a Vendor can register, modify or delete spaceships
