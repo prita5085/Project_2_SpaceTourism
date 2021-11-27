@@ -36,7 +36,8 @@ As a Customer, can modify or cancel thier flights.
 As a Customer, can modify or cancel thier tickets.
 
 Getting Started
-(include git clone command) 
+(include git clone command)
+
 git clone https://github.com/prita5085/Project_1_TRMS.git
 
 (include all environment setup steps)
