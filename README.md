@@ -55,6 +55,7 @@ Steps to use the project.
 -As a Vendor can register, modify or delete spaceships
 
 Images/Screenshots:
+
 https://github.com/prita5085/Project_2_SpaceTourism/blob/main/ST1.PNG
 https://github.com/prita5085/Project_2_SpaceTourism/blob/main/ST2.PNG
 https://github.com/prita5085/Project_2_SpaceTourism/blob/main/ST3.PNG
