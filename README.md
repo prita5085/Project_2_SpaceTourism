@@ -3,7 +3,7 @@
 Project Description
 Spaceship Enterprises, is a full-stack web application designed to meet the ever-changing demands of our clients, passengers and guests interested in space travel. It allows passengers/guests to view all the upcoming flights available and book a ticket that best suits their trip schedule. They can also filter flights based on certain conditions once they are registered with an account. Our website also allows Vendors to register spaceships and spaceports and use that information for flight management functionalities, such as, creating new flights, modify and/or cancel them as required.
 
-Technologies Used
+Technologies Used:-
 Java - version 1.8
 Spring Boot
 Spring Data JPA
