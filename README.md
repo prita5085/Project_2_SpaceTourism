@@ -71,5 +71,5 @@ https://github.com/prita5085/Project_2_SpaceTourism/blob/main/ST5.PNG
 https://github.com/prita5085/Project_2_SpaceTourism/blob/main/ST6.PNG
 
 Contributors
-Parita Shah (Role as Team Lead)
+(Parita Shah - Role as Team Lead)
 Group Project
