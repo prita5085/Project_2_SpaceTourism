@@ -48,10 +48,7 @@ https://github.com/prita5085/Project_1_TRMS.git
 -In Visual studio code open terminal and write command "ng serve"
 -Go to website http://localhost:4200/
 
-
 Usage
-Steps to use the project. 
--Start the SpringBoot Application and for front-end use command ng serve from visual studio code terminal to start the project. 
 -As a Guest, search flights, view flights, register if need to book a flight
 -As a Customer, search flights, view fligths, register, login, book a ticket from all new flights or filter flights based on conditions.
 -As a Vendor create new flights, register, login, modify flights, cancel flights
