@@ -31,9 +31,26 @@ As a Vendor, can register/login with valid credentials.
 
 To-do list:
 
-As a Customer, can view all past flights and upcoming flights.
-As a Customer, can modify or cancel thier flights.
-As a Customer, can modify or cancel thier tickets.
+Category 2(Achievable Goals):
+As a Guest, I can register so that I can buy a ticket.(BS)------------------------
+As a Guest I can view all flights on the homepage.
+As a Guest, I can search all flights to find a flight I want.
+As a Customer, I can allow multiple passengers to be included in the flight and calculate the cost based how many passengers(BS)------------------------------------------
+As a Vendor, I can see how many people have booked my flight. (PS)
+As a Vendor, I can see how much I have made off of the flight.
+As a Vendor, I can add new Destinations to expand universe coverage.(PS)
+
+
+Category 3(Stretch Goals):
+As a Customer, I can compare selected flights so that I can choose the best flight.
+As a Customer, I can make a payment that takes in credit card information.
+As a Customer, I can pick the seat on the flight.
+As a Customer, you can precheck in your bags and print tags.
+As a Customer, I can re-book my favorite flights
+As a Customer, I can pre-check baggages and print tags
+Check if the user is underage and need a parent to use it 
+Possible sites/experiences that they can see once they get to the planet or station
+
 
 Getting Started
 (include git clone command)
