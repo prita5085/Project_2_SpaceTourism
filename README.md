@@ -15,7 +15,7 @@ PostgreSQL,
 Angular/TypeScript,
 HTML,
 Bootstrap/CSS,
-JUnit - version 4,
+JUnit,
 Cucumber,
 Selenium
 
@@ -42,15 +42,12 @@ git clone:-
 
 https://github.com/prita5085/Project_1_TRMS.git
 
-(include all environment setup steps)
--On STS IDE, create Spring Boot Project, or can create project using springInitializer.io
--Add dependencies:- Spring Web, 
--Add models with required relationships(oneToMany, ManyToMany), map the entity clas with Database tables using annotations (JPA), create repository layer that extends Crud Repository, services, controller layers in packages.
--For Front-end create models, services, components, add routings-module for routings and create routes/paths. Using HTTPClientModule to make HTTP request to backend APIs.
--For testing used JUnit with Cucumber integrated with Selenium to test UI, added database credentails in application.properties file, Postman for APIs testing.
--PostgreSQL for Dabatase
--Visual Studio code Editor for front-end code
--Spring Tool Suite for backend-code
+-Once cloned, On STS IDE or preferred IDE import the existing maven project
+-Open Project2-Frontend code on Visual Studio code Editor
+-To run right-click on project in STS IDE and run as spring boot project
+-In Visual studio code open terminal and write command "ng serve"
+-Go to website http://localhost:4200/
+
 
 Usage
 Steps to use the project. 
